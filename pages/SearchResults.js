@@ -15,5 +15,6 @@ export class SearchResultsPage{
         return await this.productTitles.first().locator(".RG5Slk").innerText()
     }
 
+    
   
 }

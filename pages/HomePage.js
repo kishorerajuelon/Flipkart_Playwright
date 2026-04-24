@@ -21,6 +21,13 @@ export class HomePage{
     async InvalidsearchProduct(invalidproductName){
         await this.searchbox.fill(invalidproductNameproductName)
         await this.searchbox.press("Enter")
-
     }
+
+        async selectSuggestion(suggestion) {
+        await this.searchbox.type(suggestion)
+        await this.searchbox.press("ArrowDown")
+        await this.searchbox.press("Enter")
 }
+    
+}
+
